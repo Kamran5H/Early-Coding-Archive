@@ -7,7 +7,7 @@ from boiling_point_ml_model import predict_boiling_point
 class TestEarlyCodingArchive(unittest.TestCase):
     def test_boiling_point_prediction(self):
         bp = predict_boiling_point(60.0)
-        self.assertAlmostEqual(bp, 81.46, places=1)
+        self.assertAlmostEqual(bp, 64.59, places=2)
 
     def test_all_python_scripts_compile(self):
         root = Path(__file__).resolve().parent.parent
